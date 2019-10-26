@@ -1,5 +1,6 @@
 package br.edu.ifpb.esp.poo.copa;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Selecao {
@@ -8,6 +9,18 @@ public class Selecao {
 	private String pais;
 	private String sigla;
 	private List<Jogador> jogadores;
+
+	public Selecao() {
+		jogadores = new LinkedList<Jogador>();
+	}
+	
+	public List<Jogador> getJogadores() {
+		return jogadores;
+	}
+	
+	public void addJogador(Jogador jogador) {
+		jogadores.add(jogador);
+	}
 	
 	public String getSigla() {
 		return sigla;
